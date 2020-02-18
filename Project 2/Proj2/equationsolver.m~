@@ -1,0 +1,5 @@
+syms y(t) a
+
+eqn = diff(y,t,2) == a*y;
+cond = y(0) == 5;
+ySol(t) = dsolve(eqn)
